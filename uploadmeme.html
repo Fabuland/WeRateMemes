@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>We Rate Memes</title>
+	<link rel="stylesheet" type="text/css" href="externoupload.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" />
+</head>
+
+<body>
+	<div class="contenedorupload">
+		<div class="cabecera">
+			<div class="idioma">
+				<label for="selectidioma">Idioma:
+				<select class="selector" id="selectidioma">
+					<option>Español</option>
+					<option>Inglés</option>
+                </select>
+                </label>
+			</div>
+			<header class="logo">
+				<a href="index.html">
+					<img alt="logo" class="imglogo" src="logopagina.png" width="150" height="70">
+				</a>
+			</header>
+			<nav class="navegador">
+				<label for="areabusq"><strong>Buscar meme</strong> &nbsp;
+					<input name="busqueda" type="text" id="areabusq" />
+				</label>
+				<br> <a href="loginregister.html">Login/Register |</a>
+				<a href="uploadmeme.html">Subir meme</a>
+			</nav>
+		</div>
+		<div class="subirmeme">
+			<div class="formulario">
+				<h1 class="subirtext">SUBIR MEME</h1>
+				<p>Rellena los campos con los datos necesarios</p>
+				<form autocomplete="on">
+					<label for="titulomeme">Título del meme:</label>
+					<input type="text" id="titulomeme" placeholder="Título" name="nombrememe" class="inptext" autofocus required>
+					<!--Lo primero que se debe poner es el título del meme-->
+					<label for="filesubir">Subir meme:</label>
+                    <input type="file" id="filesubir" name="subir" class="inptext">
+                    <fieldset>
+					<legend>Selecciona la categoría:</legend>
+					<input type="radio" id="dank" name="categoria" class="inptext" value="Dank">
+					<label translate="no" for="dank">Dank</label>
+					<br>
+					<!--La categoría de los memes vienen del inglés, no se pueden traducir-->
+					<input type="radio" id="wholesome" name="categoria" class="inptext" value="Wholesome">
+					<label translate="no" for="wholesome">Wholesome</label>
+					<br>
+					<input type="radio" id="edgy" name="categoria" class="inptext" value="Edgy">
+					<label translate="no" for="edgy">Edgy</label>
+					<br>
+					<input type="radio" id="meta" name="categoria" class="inptext" value="Meta">
+                    <label translate="no" for="meta">Meta</label>
+                    </fieldset>
+					<br>
+					<label for="email">¿Quieres recibir notificaciones?</label>
+					<input type="email" id="email" name="email" placeholder="Introduce email" class="email" autocomplete="off">
+					<br>
+					<!--Para evitar que el usuario pueda cometer un error es mejor que lo tenga que escribir siempre a mano-->
+					<label for="submitupl"><input type="submit" id="submitupl" class="boton" value="Enviar"></label>
+					<label for="resettt">|<input type="reset" id="resettt" class="boton" value="Reset"></label>
+				</form>
+			</div>
+			<div class="videodiv">
+				<video width="400" controls class="video">
+					<source src="PostVideo.mp4" type="video/mp4"> <span>Tu navegador no soporta el video</span>
+				</video>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="contacto">
+				<p>Contacto: carlos_tropical@hotmail.es</p>
+				<!--El email nunca debe traducirse ya que daría como resultado otro totalmente distinto-->  
+				<a href="nosotros.html">Sobre nosotros</a>
+			</div>
+			<section class="redes"> <span class="red"><strong>Redes: </strong></span>
+				<div class="red">
+					<a href="www.twitter.com">
+						<img alt="twitter" class="redlogo" src="twitterlogo.png" width="50" height="50">
+					</a>
+				</div>
+				<div class="red">
+					<a href="www.reddit.com">
+						<img alt="reddit" class="redlogo" src="redditlogo.png" width="50" height="50">
+					</a>
+				</div>
+				<div class="red">
+					<a href="www.instagram.com">
+						<img alt="reddit" class="redlogo" src="instalogo.png" width="50" height="50">
+					</a>
+				</div>
+			</section>
+		</footer>
+	</div>
+</body>
+
+</html>

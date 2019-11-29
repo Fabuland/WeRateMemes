@@ -1,0 +1,290 @@
+.contenedorprincipal {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: auto 10px auto 10px auto;
+	grid-template-columns: auto auto auto;
+	-ms-grid-rows: auto;
+	grid-template-rows: auto;
+	grid-template-areas: "cabecera cabecera cabecera""memes memes memes""footer footer footer";
+	grid-gap: 10px;
+}
+.cabecera {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 5;
+	grid-area: cabecera;
+	justify-self: center;
+	background: -webkit-linear-gradient(linear, right top, left top, color-stop(73%, #33ccff), to(#ff99cc));
+	background: -o-linear-gradient(right, #33ccff 73%, #ff99cc 100%);
+	background: linear-gradient(to left, #33ccff 73%, #ff99cc 100%);
+	width: 100%;
+	height: 120%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	text-align: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border: #ff99cc 3px solid;
+}
+.idioma {
+	grid-area: idioma;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 10px;
+}
+.imglogo {
+	width: 60%;
+	height: 100%;
+	-webkit-animation-name: animlogo;
+	animation-name: animlogo;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+@-webkit-keyframes animlogo {
+	0% {
+		-webkit-transform: rotate(-10deg);
+		transform: rotate(-10deg);
+	}
+	25% {
+		-webkit-transform: rotate(10deg);
+		transform: rotate(10deg);
+	}
+	50% {
+		-webkit-transform: rotate(-10deg);
+		transform: rotate(-10deg);
+	}
+	75% {
+		-webkit-transform: rotate(10deg);
+		transform: rotate(10deg);
+	}
+	100% {
+		-webkit-transform: rotate(-10deg);
+		transform: rotate(-10deg);
+	}
+}
+@keyframes animlogo {
+	0% {
+		-webkit-transform: rotate(-10deg);
+		transform: rotate(-10deg);
+	}
+	25% {
+		-webkit-transform: rotate(10deg);
+		transform: rotate(10deg);
+	}
+	50% {
+		-webkit-transform: rotate(-10deg);
+		transform: rotate(-10deg);
+	}
+	75% {
+		-webkit-transform: rotate(10deg);
+		transform: rotate(10deg);
+	}
+	100% {
+		-webkit-transform: rotate(-10deg);
+		transform: rotate(-10deg);
+	}
+}
+.logo {
+	grid-area: logo;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 10px;
+}
+.navegador {
+	grid-area: nav;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 10px;
+}
+#areabusq {
+	width: 80%;
+}
+.todosmemes {
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 5;
+	grid-area: memes;
+	justify-self: center;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	text-align: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-top: 10px;
+}
+.valpropia {
+	margin-right: 20px;
+}
+.valusuario {
+	margin-left: 20px;
+}
+.todosmemes img {
+	width: 80%;
+	height: 100%;
+}
+.meme1 {
+	grid-area: meme1;
+	float: right;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 10px;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+.meme2 {
+	grid-area: meme2;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 10px;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+.meme3 {
+	grid-area: meme3;
+	float: left;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 10px;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+.valoracion {
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	font-size: 30px;
+}
+.valoracion > span {
+	display: inline-block;
+	position: relative;
+	width: 1.1em;
+}
+.valoracion > span:hover:before,
+.valoracion > span:hover ~ span:before {
+	content: "\2605";
+	position: absolute;
+}
+.footer {
+	-ms-grid-row: 5;
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 5;
+	grid-area: footer;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.contacto {
+	-ms-grid-column-align: center;
+	justify-self: center;
+	float: right;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 10px;
+	text-align: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+.pasarpag {
+	-ms-grid-column-align: center;
+	justify-self: center;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 10px;
+	text-align: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.redes {
+	justify-self: center;
+	float: left;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+body {
+	margin: 0px;
+	font-family: 'Oxygen', sans-serif;
+	background-image: url('fondo.jpg');
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1;
+}
+.circulo {
+	height: 25px;
+	width: 25px;
+	background-color: gray;
+	border-radius: 50%;
+	display: inline-block;
+}
+.circulo:hover {
+	background-color: black;
+}
+.contacto {
+	border-top: 1px gray solid;
+	border-right: 1px gray solid;
+}
+a:link {
+	text-decoration: none;
+	color: red;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+a:visited {
+	color: purple;
+}
+a:active {
+	color: blue;
+}
+a:hover {
+	font-size: 20px;
+}
+@media (max-width: 800px) {
+	.todosmemes {
+		display: block;
+	}
+	.cabecera {
+		display: block;
+	}
+	.footer {
+		display: block;
+	}
+	.logo {
+		width: 60%;
+	}
+	#areabusq {
+		width: 50%;
+	}
+	.meme1 {} .meme2 {} .meme3 {}
+}
+/*Se ha usado un beautifier para formatear el código*/

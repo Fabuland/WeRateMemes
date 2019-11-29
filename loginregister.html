@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>We Rate Memes</title>
+	<link rel="stylesheet" type="text/css" href="externologreg.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" />
+</head>
+
+<body>
+	<div class="contenedorlogreg">
+		<div class="cabecera">
+			<div class="idioma">
+				<label for="selectidioma">Idioma:</label>
+				<select class="selector" id="selectidioma">
+					<option>Español</option>
+					<option>Inglés</option>
+				</select>
+			</div>
+			<header class="logo">
+				<a href="index.html">
+					<img alt="logo" class="imglogo" src="logopagina.png" width="150" height="70">
+				</a>
+			</header>
+			<nav class="navegador">
+				<label for="areabusq"><strong>Buscar meme</strong> &nbsp;
+					<input name="busqueda" type="text" id="areabusq" />
+				</label>
+				<br>	<a href="loginregister.html">Login/Register |</a>
+				<a href="uploadmeme.html">Subir meme</a>
+			</nav>
+		</div>
+		<div class="logreg">
+			<div class="login">
+				<h1 class="logintext">LOGIN</h1>
+				<p>Introduce tus datos.</p>
+				<hr>
+				<form autocomplete="on">
+					<label for="userlogin">Usuario
+						<input type="text" id="userlogin" placeholder="Introduce usuario" name="usuario" class="intexto" autofocus required>
+					</label>
+					<!--Tiene sentido que lo primero que introduzca el usuario sea el propio nombre de usuario-->
+					<label for="passlogin">Contraseña
+						<input type="password" id="passlogin" placeholder="Introduce contraseña" name="contraseña" class="intexto" autocomplete="off" required>
+					</label>
+					<!--Sería un gran fallo de seguridad permitir que se autocomplete la contraseña-->
+					<label for="checkbox">Recuérdame:
+						<input type="checkbox" id="checkbox">
+					</label>
+					<hr>
+					<label for="submitlogin">
+						<input type="submit" id="submitlogin" class="botonlogreg" value="Login">
+					</label>
+				</form>
+			</div>
+			<div class="register">
+				<h1 class="registertext">REGISTER</h1>
+				<p>Rellena con tus datos para crear una cuenta.</p>
+				<hr>
+				<form autocomplete="on">
+					<label for="userreg">Usuario
+						<input type="text" id="userreg" placeholder="Introduce usuario" name="usuario" class="intexto" required>
+					</label>
+					<label for="passreg">Contraseña
+						<input type="password" id="passreg" placeholder="Introduce contraseña" name="contraseña" class="intexto" autocomplete="off" required>
+					</label>
+					<!--Sería un gran fallo de seguridad permitir que se autocomplete la contraseña-->
+					<label for="repeatpassreg">Repite la constraseña
+						<input type="password" id="repeatpassreg" placeholder="Repite contraseña" name="repitecontr" class="intexto" autocomplete="off" required>
+					</label>
+					<!--Sería un gran fallo de seguridad permitir que se autocomplete la contraseña-->
+					<hr>
+					<p>Al crear una cuenta aceptas nuestros <a href="términos.html">términos y condiciones</a>.</p>
+					<label for="submitreg">
+						<input type="submit" id="submitreg" class="botonlogreg" value="Registro">
+					</label>
+				</form>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="contacto">
+				<p translate="no">Contacto: carlos_tropical@hotmail.es</p>
+				<!--El email nunca debe traducirse ya que daría como resultado otro totalmente distinto--> <a href="nosotros.html">Sobre nosotros</a>
+			</div>
+			<section class="redes"> <span class="red"><strong>Redes: </strong></span>
+				<div class="red">
+					<a href="www.twitter.com">
+						<img alt="twitter" class="redlogo" src="twitterlogo.png" width="50" height="50">
+					</a>
+				</div>
+				<div class="red">
+					<a href="www.reddit.com">
+						<img alt="reddit" class="redlogo" src="redditlogo.png" width="50" height="50">
+					</a>
+				</div>
+				<div class="red">
+					<a href="www.instagram.com">
+						<img alt="reddit" class="redlogo" src="instalogo.png" width="50" height="50">
+					</a>
+				</div>
+			</section>
+		</footer>
+	</div>
+</body>
+
+</html>
