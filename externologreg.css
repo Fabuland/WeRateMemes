@@ -199,7 +199,8 @@ body {
 	margin: 0px;
 	font-family: 'Oxygen', sans-serif;
     background-image: url('fondo.jpg');
-    column-count:1;
+	column-count:1;
+	width: 99.8%;
 }
 .logintext {
 	-webkit-transform: rotateZ(10deg);
