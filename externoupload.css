@@ -1,3 +1,5 @@
+/*Los prefijos de los navegadores se han puesto usando https://autoprefixer.github.io/ Una página recomendada por Google y usada por Twitter.*/
+/*Se ha usado un beautifier para formatear el código*/
 .contenedorupload {
 	display: -ms-grid;
 	display: grid;
@@ -27,6 +29,9 @@
 	-ms-flex-align: center;
 	align-items: center;
 	border: #ff99cc 3px solid;
+}
+#breadcrumb{
+	font-size: 14px;
 }
 .subirmeme {
 	-ms-grid-row: 3;
@@ -199,7 +204,9 @@
 body {
 	margin: 0px;
 	font-family: 'Oxygen', sans-serif;
-    background-image: url('fondo.jpg');
+	background-image: url('pics/fondo.jpg');
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
 	column-count:1;
 	width: 99.8%;
 }
@@ -230,7 +237,8 @@ a:hover {
 		width: 60%;
 	}
 	#areabusq {
-		width: 50%;
+		width: 100%;
+		height: 35%;
 	}
 	.subirmeme {
 		width: 120%;
@@ -240,11 +248,23 @@ a:hover {
 		width: 20%;
 	}
 	.cabecera {
-		display: block;
-	}
-	.footer {
-		display: block;
-	}
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+}
+.footer {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+}
 	.boton {
 		font-size: 12px;
 	}

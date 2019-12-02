@@ -1,3 +1,5 @@
+/*Los prefijos de los navegadores se han puesto usando https://autoprefixer.github.io/ Una página recomendada por Google y usada por Twitter.*/
+/*Se ha usado un beautifier para formatear el código*/
 .contenedorprincipal {
 	display: -ms-grid;
 	display: grid;
@@ -234,7 +236,7 @@
 body {
 	margin: 0px;
 	font-family: 'Oxygen', sans-serif;
-	background-image: url('fondo.jpg');
+	background-image: url('pics/fondo.jpg');
 	-webkit-column-count: 1;
 	-moz-column-count: 1;
 	column-count: 1;
@@ -275,17 +277,29 @@ a:hover {
 		display: block;
 	}
 	.cabecera {
-		display: block;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
 	}
 	.footer {
-		display: block;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
 	}
 	.logo {
 		width: 60%;
 	}
 	#areabusq {
-		width: 50%;
+		width: 100%;
+		height: 35%;
 	}
 	.meme1 {} .meme2 {} .meme3 {}
 }
-/*Se ha usado un beautifier para formatear el código*/
